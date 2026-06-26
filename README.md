@@ -8,7 +8,23 @@ The goal of this project is to develop an end-to-end machine learning pipeline i
 
 Our task is to predict the sales prices for houses given 79 explanatory variables describing residential homes.
 
-## Dataset
+## :bar_chart: Dataset
+
+Source:
+https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
+
+Files:
+- train.csv
+- test.csv
+
+Target variable:
+- SalePrice
+
+Training samples:
+- 1460
+
+Features:
+- 79 explanatory variables
 
 ## Technologies
 
@@ -29,9 +45,14 @@ house-price-prediction/
 
 ## Pipeline
 
-## Exploratory Data Analysis (EDA)
+1. Data Loading
+2. Exploratory Data Analysis
+3. Data Cleaning
+4. Feature Engineering
+5. Model Training
+6. Evaluation
 
-## Feature Engineering
+## Exploratory Data Analysis (EDA)
 
 ## Models
 
