@@ -1,14 +1,12 @@
-# House Price Prediction
+# :house_with_garden: House Price Prediction
 
 Machine learning project to predict real estate prices based on Kaggle's House Prices Dataset.
 
-The goal of this project is to develop an end-to-end machine learning pipeline including data cleansing, feature engineering, model training, and evaluation.
-
-## Problem Statement
-
-Our task is to predict the sales prices for houses given 79 explanatory variables describing residential homes.
+The goal of this project is to develop an end-to-end machine learning pipeline including data exploration, preprocessing, feature engineering, model training, and evaluation.
 
 ## :bar_chart: Dataset
+
+Our task is to predict the sales prices for houses given 79 explanatory variables describing residential homes.
 
 Source:
 https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
@@ -26,13 +24,7 @@ Training samples:
 Features:
 - 79 explanatory variables
 
-## Technologies
-
-- Python
-- pandas
-
-
-## Project Structure
+## :open_file_folder: Project Structure
 
 ```text
 house-price-prediction/
@@ -41,19 +33,20 @@ house-price-prediction/
 └── README.md
 ```
 
-## Installation
+## :wrench: Technologies
 
-## Pipeline
+- Python 3.14
+- pandas
 
-1. Data Loading
-2. Exploratory Data Analysis
-3. Data Cleaning
-4. Feature Engineering
-5. Model Training
-6. Evaluation
 
-## Exploratory Data Analysis (EDA)
+## :rocket: Pipeline
 
-## Models
+1. Exploratory Data Analysis (EDA)
+2. Preprocessing
+3. Feature Engineering
+4. Model Training
+5. Evaluation
 
-## Reproducing Results
+## :test_tube: Results
+
+## :gear: Installation
