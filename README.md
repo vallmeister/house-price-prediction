@@ -37,6 +37,9 @@ house-price-prediction/
 
 - Python 3.14
 - pandas
+- numpy
+- scikit-learn
+- seaborn
 
 
 ## :rocket: Pipeline
@@ -48,5 +51,7 @@ house-price-prediction/
 5. Evaluation
 
 ## :test_tube: Results
+
+Baseline: Linear regression
 
 ## :gear: Installation
