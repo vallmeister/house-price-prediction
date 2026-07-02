@@ -1,19 +1,43 @@
-import pandas as pd
+from sklearn.base import BaseEstimator, TransformerMixin
 
 
+class MissingImputer(BaseEstimator, TransformerMixin):
+
+    def __init__(self, columns, fill_value="None"):
+        self.columns = columns
+        self.fill_value = fill_value
+
+    def transform(self, X):
+        X = X.copy()
+        for col in self.columns:
+            X[col] = X[col].fillna(self.fill_value)
+        return X
+
+    def fit(self, X, y=None):
+        return self
 
 
-class Preprocessor:
+class ColumnDropper(BaseEstimator, TransformerMixin):
 
-    def load_train_data(self):
-        return pd.read_csv('../data/train.csv', index_col=0)
+    def __init__(self, columns):
+        self.columns = columns
 
-    def load_test_data(self):
-        return pd.read_csv('../data/train.csv', index_col=0)
+    def fit(self, X, y=None):
+        return self
 
-    def get_imputed_train_data(self):
-        data = self.load_train_data()
+    def transform(self, X):
+        X = X.copy()
+        return X.drop(columns=self.columns, errors="ignore")
 
-        data["PoolQC"] = data["PoolQC"].fillna("None")
 
-        return data
+class RowDropper(BaseEstimator, TransformerMixin):
+
+    def __init__(self, columns):
+        self.columns = columns
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        X = X.copy()
+        return X.dropna(subset=self.columns)

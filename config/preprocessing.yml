@@ -1,0 +1,37 @@
+impute_missing:
+  - PoolQC
+  - MiscFeature
+  - Alley
+  - Fence
+  - MasVnrType
+  - FireplaceQu
+  - LotFrontage
+  - GarageType
+  - GarageFinish
+  - BsmtExposure
+  - BsmtQual
+  - BsmtCond
+  - BsmtFinType1
+
+drop_columns:
+  - BsmtFinSF2
+  - LowQualFinSF
+  - EnclosedPorch
+  - 3SsnPorch
+  - ScreenPorch
+  - PoolArea
+  - MiscVal
+  - Street
+  - Utilities
+  - LandSlope
+  - Condition2
+  - RoofMatl
+  - Heating
+  - Functional
+  - GarageQual
+  - GarageCond
+  - GarageYrBlt
+
+drop_rows:
+  - Electrical
+  - MasVnrArea
